@@ -4,7 +4,8 @@
 //if there is ?name= .. then $_GET["name"]
 $my_message = $_GET["message"];
 $to = $_GET["to"];
-echo "My message is ".$my_message." for"." ".$to
+$from = $_GET["from"];
+echo "My message is ".$my_message." for"." ".$to." from "." ".$from;
 
 
 
@@ -17,6 +18,8 @@ echo "My message is ".$my_message." for"." ".$to
 <input type="text" name="message"><br>
 <label for="to"> To:*</label><br>
 <input type="text" name="to"><br>
+<label for="from"> From:*</label><br>
+<input type="from" name="from"><br>
 <input type="submit" value="Save to DB"> 
 
 	
